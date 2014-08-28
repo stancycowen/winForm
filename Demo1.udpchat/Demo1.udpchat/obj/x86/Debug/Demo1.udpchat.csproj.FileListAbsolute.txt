@@ -1,7 +1,9 @@
 F:\Demo1.udpchat\Demo1.udpchat\bin\Debug\Demo1.udpchat.exe
 F:\Demo1.udpchat\Demo1.udpchat\bin\Debug\Demo1.udpchat.pdb
-F:\Demo1.udpchat\Demo1.udpchat\obj\x86\Debug\Demo1.udpchat.mainForm.resources
+F:\Demo1.udpchat\Demo1.udpchat\obj\x86\Debug\Demo1.udpchat.chat.resources
 F:\Demo1.udpchat\Demo1.udpchat\obj\x86\Debug\Demo1.udpchat.Properties.Resources.resources
+F:\Demo1.udpchat\Demo1.udpchat\obj\x86\Debug\Demo1.udpchat.UCFriendList.resources
 F:\Demo1.udpchat\Demo1.udpchat\obj\x86\Debug\Demo1.udpchat.csproj.GenerateResource.Cache
 F:\Demo1.udpchat\Demo1.udpchat\obj\x86\Debug\Demo1.udpchat.exe
 F:\Demo1.udpchat\Demo1.udpchat\obj\x86\Debug\Demo1.udpchat.pdb
+F:\Demo1.udpchat\Demo1.udpchat\obj\x86\Debug\Demo1.udpchat.mainForm.resources
