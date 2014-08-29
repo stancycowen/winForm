@@ -45,6 +45,7 @@
             this.picHeadImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picHeadImage.TabIndex = 0;
             this.picHeadImage.TabStop = false;
+            this.picHeadImage.Click += new System.EventHandler(this.picHeadImage_Click);
             // 
             // plFriendList
             // 
@@ -164,15 +165,16 @@
             this.imgList.Images.SetKeyName(102, "Zilean_Square_0.png");
             this.imgList.Images.SetKeyName(103, "Zyra_Square_0.png");
             // 
-            // formFriend
+            // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(238, 505);
             this.Controls.Add(this.plFriendList);
             this.Controls.Add(this.picHeadImage);
-            this.Name = "formFriend";
+            this.Name = "mainForm";
             this.Text = "formFriend";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.mainForm_FormClosing);
             this.Load += new System.EventHandler(this.formFriend_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picHeadImage)).EndInit();
             this.ResumeLayout(false);

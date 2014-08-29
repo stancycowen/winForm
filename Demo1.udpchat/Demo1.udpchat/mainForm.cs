@@ -32,14 +32,16 @@ namespace Demo1.udpchat
             mainForm.CheckForIllegalCrossThreadCalls = false; 
             Thread th = new Thread(ope.listen);
             th.IsBackground = true;
+            th.Start();
             Thread.Sleep(100);
-            th.Start();  
             UdpClient uc = new UdpClient();
             IPEndPoint ipep = new IPEndPoint(IPAddress.Parse("255.255.255.255"), 9527);
             string loginName = Operation.getMyIP().ToString();
             string info = "LOGIN|" + loginName + "|15|好烦！";
             byte[] binfo = Encoding.Default.GetBytes(info);
-            uc.Send(binfo, binfo.Length, ipep);           
+            uc.Send(binfo, binfo.Length,ipep); 
+
+                     
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -50,6 +52,21 @@ namespace Demo1.udpchat
         private void txtLogin_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void picHeadImage_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void mainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            UdpClient uc = new UdpClient();
+            IPEndPoint ipep = new IPEndPoint(IPAddress.Parse("255.255.255.255"), 9527);
+            string loginName = Operation.getMyIP().ToString();
+            string info = "LOGOUT";
+            byte[] binfo = Encoding.Default.GetBytes(info);
+            uc.Send(binfo, binfo.Length,ipep); 
         }
     }
 }
